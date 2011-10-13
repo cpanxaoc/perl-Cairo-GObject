@@ -15,8 +15,9 @@ use Cairo;
 use Glib;
 
 use XSLoader;
-our $VERSION = '1.000';
-XSLoader::load 'Cairo::GObject', $VERSION;
+
+our $VERSION = '1.001';
+XSLoader::load ('Cairo::GObject', $VERSION);
 
 1;
 

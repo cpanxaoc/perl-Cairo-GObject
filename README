@@ -19,7 +19,7 @@ DEPENDENCIES
 This module requires these other modules and libraries:
 
   cairo-gobject (C library) >= 1.10.0
-  Cairo (Perl module)       >= 1.062
+  Cairo (Perl module)       >= 1.080
   Glib (Perl module)        >= 1.224
 
 In order to build it from source, you'll also need

@@ -1,3 +1,8 @@
+Overview of changes in Cairo::GObject 1.001
+===========================================
+
+* Require Cairo 1.080 for the cairo_region_t converters.
+
 Overview of changes in Cairo::GObject 1.000
 ===========================================
 

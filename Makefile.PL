@@ -13,7 +13,7 @@ use ExtUtils::MakeMaker;
 our %build_reqs = (
   'perl-ExtUtils-Depends'   => '0.2',
   'perl-ExtUtils-PkgConfig' => '1.0',
-  'perl-Cairo'              => '1.071',
+  'perl-Cairo'              => '1.080',
   'perl-Glib'               => '1.224',
   'cairo-gobject'           => '1.10.0',
 );
