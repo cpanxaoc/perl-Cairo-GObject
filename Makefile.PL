@@ -25,6 +25,26 @@ our %pre_reqs = (
   'Glib'                => $build_reqs{'perl-Glib'},
 );
 
+our %meta_merge = (
+    'configure_requires'    => \%pre_reqs,
+    'release_status'        => 'stable',
+    'resources'   => {
+        'bugtracker'    => {
+            'mailto'        => 'bug-Cairo-GObject [at] rt.cpan.org',
+            'web'           =>
+            'https://rt.cpan.org/Public/Dist/Display.html?Name=Cairo-GObject',
+        },
+        'homepage'      => 'http://gtk2-perl.sourceforge.net/',
+        'MailingList'   => 'gtk-perl-list [at] gnome.org',
+        'repository'    => {
+            'type'          => 'git',
+            'url'           => 'git://git.gnome.org/perl-Cairo-GObject',
+            'web'           =>
+                'http://git.gnome.org/browse/perl-Cairo-GObject/',
+        },
+    },
+);
+
 unless (eval "use ExtUtils::Depends '$build_reqs{'perl-ExtUtils-Depends'}';"
            . "use ExtUtils::PkgConfig '$build_reqs{'perl-ExtUtils-PkgConfig'}';"
            . "use Cairo '$build_reqs{'perl-Cairo'}';"
@@ -66,10 +86,7 @@ WriteMakefile(
   PREREQ_PM     => \%pre_reqs,
   XSPROTOARG    => '-noprototypes',
 
-  META_MERGE    => {
-    configure_requires => \%pre_reqs,
-  },
-
+  META_MERGE    => \%meta_merge,
   $dep->get_makefile_vars,
 );
 
