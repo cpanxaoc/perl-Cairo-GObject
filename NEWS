@@ -1,3 +1,10 @@
+Overview of changes in Cairo::GObject 1.002
+===========================================
+
+* Makefile.PL: added CPAN::Meta::Spec v2 block to META_MERGE
+* LICENSE: updated FSF address
+* README: updated contact/mailing list/git info
+
 Overview of changes in Cairo::GObject 1.001
 ===========================================
 
