@@ -26,6 +26,13 @@ our %pre_reqs = (
 );
 
 our %meta_merge = (
+    'meta-spec'          => {
+        version => '2',
+        url     => 'http://search.cpan.org/perldoc?CPAN::Meta::Spec',
+    },
+    'author' => ['gtk2-perl Team <gtk-perl-list at gnome dot org>'],
+    # valid values: https://metacpan.org/module/CPAN::Meta::Spec#license
+    license             => 'lgpl_2_1',
     'configure_requires'    => \%pre_reqs,
     'release_status'        => 'stable',
     'resources'   => {
@@ -35,7 +42,8 @@ our %meta_merge = (
             'https://rt.cpan.org/Public/Dist/Display.html?Name=Cairo-GObject',
         },
         'homepage'      => 'http://gtk2-perl.sourceforge.net/',
-        'MailingList'   => 'gtk-perl-list [at] gnome.org',
+        'x_MailingList' => 'https://mail.gnome.org/mailman/listinfo/gtk-perl-list',
+        'license'       => 'http://www.gnu.org/licenses/lgpl-2.1.html',
         'repository'    => {
             'type'          => 'git',
             'url'           => 'git://git.gnome.org/perl-Cairo-GObject',
