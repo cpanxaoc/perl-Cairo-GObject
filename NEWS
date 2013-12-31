@@ -1,3 +1,8 @@
+Overview of changes in Cairo::GObject 1.003
+===========================================
+
+* Makefile.PL: add 'meta-spec' and 'license' keys to META_MERGE block to enable the expanded metadata display on MetaCPAN 
+
 Overview of changes in Cairo::GObject 1.002
 ===========================================
 
