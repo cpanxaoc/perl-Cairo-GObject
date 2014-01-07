@@ -33,7 +33,11 @@ our %meta_merge = (
     'author' => ['gtk2-perl Team <gtk-perl-list at gnome dot org>'],
     # valid values: https://metacpan.org/module/CPAN::Meta::Spec#license
     license             => 'lgpl_2_1',
-    'configure_requires'    => \%pre_reqs,
+    prereqs => {
+        configure => {
+            requires => {%pre_reqs}, # no direct ref for 5.14 compatibility
+        },
+    },
     'release_status'        => 'stable',
     'resources'   => {
         'bugtracker'    => {
