@@ -1,3 +1,8 @@
+Overview of changes in Cairo::GObject 1.004
+===========================================
+
+* Makefile.PL: Fix specification of requirements in the META files
+
 Overview of changes in Cairo::GObject 1.003
 ===========================================
 

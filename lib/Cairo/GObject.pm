@@ -16,7 +16,7 @@ use Glib;
 
 use XSLoader;
 
-our $VERSION = '1.003';
+our $VERSION = '1.004';
 XSLoader::load ('Cairo::GObject', $VERSION);
 
 1;
